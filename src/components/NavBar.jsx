@@ -1,4 +1,5 @@
 import 'animate.css'
+import CartWidget from './CartWidget'
 
 const NavBar = () => {
 
@@ -38,14 +39,17 @@ const NavBar = () => {
             <a href="" style={styleA} className='hover:text-orange-400 duration-300' >Nosotros</a>
           </li>
           <li className='animate__animated animate__backInLeft font-semibold' style={stylesLi}>
-            <a href="" style={styleA} className='hover:text-orange-400 duration-300' >Productos</a>
+            <a href="" style={styleA} className='hover:text-orange-400 duration-300' >Contacto</a>
           </li>
           <li className='animate__animated animate__backInLeft font-semibold' style={stylesLi}>
-           <a href="" style={styleA} className='hover:text-orange-400 duration-300'>Contacto</a>
+           <a href="" style={styleA} className='hover:text-orange-400 duration-300'>Productos</a>
           </li>
+          <CartWidget/>
         </ul>
       </nav>
     </header>
+    
+    
   )
 }
 export default NavBar
